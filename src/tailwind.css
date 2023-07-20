@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+    }
+}
+
+@layer components {
+    .kay-container {
+        width: 1440px;
+        max-width: calc(100% - 46px);
+        margin: 0 auto;
+    }
+
+    .btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 46px;
+        width: 134px;
+        background: #22201f;
+        border: 1px solid #373739;
+        color: #fff;
+        border-radius: 999px;
+        font-size: 20px;
+    }
+}
+
+.nav-link {
+    @apply text-xl font-normal tracking-[-0.8px] relative after:absolute after:bottom-0 after:left-0 after:bg-kay_primary after:h-0.5 after:w-0 after:hover:w-full after:transition-all after:duration-500 after:ease-in-out;
+}
